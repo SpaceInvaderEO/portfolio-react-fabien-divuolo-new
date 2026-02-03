@@ -31,8 +31,9 @@ const Footer = () => {
  
           <Col xs={12} md={{ span: 2, offset: 1 }}>
             <h5>Mes dernières réalisations</h5>
-            <p>Info ligne 1</p>
-            <p>Info ligne 2</p>
+            <p>Info projet burger</p>
+            <p>Info projet pizza</p>
+            <p>Info projet kebab</p>
           </Col>
         </Row>
       </Container>

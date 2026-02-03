@@ -90,6 +90,123 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.home-hero {
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+}
+
+.hero-overlay h2 {
+  margin: 1rem 0;
+}
+
+.hero-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+}
+
+.home-content {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+.home-card {
+  width: 80%;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow:
+    0 -2px 4px rgba(0, 0, 0, 0.05),
+    -4px 0 8px rgba(0, 0, 0, 0.1),
+    4px 0 8px rgba(0, 0, 0, 0.1),
+    0 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+.title-underline {
+  width: 100%;
+  height: 4px;
+  background-color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.section-content {
+  width: 100%;
+}
+
+.section-content img {
+  width: 100%;
+  display: block;
+}
+
+.section-content p {
+  width: 100%;
+}
+
+.progress {
+  background-color: #e0e0e0;
+  height: 8px;
+}
+
+.progress-bar {
+  height: 100%;
+}
+
+.progress-bar.html {
+  width: 90%;
+  background-color: #dc3545;
+}
+.progress-bar.css {
+  width: 80%;
+  background-color: #0dcaf0;
+}
+.progress-bar.js {
+  width: 70%;
+  background-color: #ffc107;
+}
+.progress-bar.php {
+  width: 60%;
+  background-color: #198754;
+}
+.progress-bar.react {
+  width: 50%;
+  background-color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+  .home-card {
+    width: 95%;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
