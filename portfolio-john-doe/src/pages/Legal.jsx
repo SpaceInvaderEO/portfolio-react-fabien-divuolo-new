@@ -1,6 +1,7 @@
+import { Helmet } from "react-helmet-async";
 import { useState } from "react"; 
 
-export default function MentionsLegales() {
+export default function Legal() {
   const [open, setOpen] = useState({
     editor: false,
     host: false,
@@ -11,7 +12,12 @@ export default function MentionsLegales() {
     setOpen((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
-  return (
+  return ( 
+   <>
+    <Helmet>
+      <meta name="robots" content="noindex, nofollow" />
+    </Helmet>
+
     <section className="legal-page">
       <h1>Mentions légales</h1>
       <div className="legal-underline"></div>
@@ -19,8 +25,7 @@ export default function MentionsLegales() {
       <div className={`legal-accordion ${open.editor ? "open" : ""}`}>
         <button
           className="accordion-header"
-          onClick={() => toggle("editor")}
-        >
+          onClick={() => toggle("editor")}>
           Éditeur du site
           <span className="arrow">{open.editor ? "˄" : "˅"}</span>
         </button>
@@ -88,5 +93,6 @@ export default function MentionsLegales() {
         </div>
       </div>
     </section>
+   </>
   );
 }

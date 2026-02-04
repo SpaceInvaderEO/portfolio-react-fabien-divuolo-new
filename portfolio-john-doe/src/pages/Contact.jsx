@@ -19,13 +19,13 @@ const Contact = () => {
 
              <div className="form-wrapper">
                <form className="contact-form">
-                 <input type="text" placeholder="Votre nom" />
-                 <input type="email" placeholder="Votre adresse email" />
-                 <input type="tel" placeholder="Votre numéro de téléphone" />
-                 <input type="text" placeholder="Sujet" />
+                 <input type="text" placeholder="Votre nom" required/>
+                 <input type="email" placeholder="Votre adresse email" required/>
+                 <input type="tel" placeholder="Votre numéro de téléphone" required/>
+                 <input type="text" placeholder="Sujet" required/>
                  <textarea
                    rows="25"
-                   placeholder="Votre message"
+                   placeholder="Votre message" required
                  ></textarea>
 
                  <button type="submit">Envoyer</button>

@@ -287,6 +287,19 @@ footer a:hover {
   font-size: 0.9rem;
 }
 
+.service-card,
+.portfolio-card {
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-card:hover,
+.portfolio-card:hover {
+  background-color: #efefef;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
 .portfolio-hero {
   height: 20vh;
   background-size: cover;
@@ -332,6 +345,14 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.portfolio-card .card-main button {
+  transition: background-color 0.25s ease;
+}
+
+.portfolio-card .card-main button:hover {
+  background-color: #3d8bfd;
 }
 
 .card-header {
