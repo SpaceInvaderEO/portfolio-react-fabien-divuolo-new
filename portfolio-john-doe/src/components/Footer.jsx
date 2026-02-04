@@ -13,11 +13,34 @@ const Footer = () => {
             <p className="mb-1">69009 Lyon, France</p>
             <p className="mb-1">10 20 30 40 50</p>
             <p className="mb-1">john.doe@gmail.com</p>
-            <div className="d-flex gap-2">
-              <FaGithub color="gray" />
-              <FaTwitter color="gray" />
-              <FaLinkedin color="gray" />
-            </div>
+            <div className="footer-socials">
+            <a
+              href="https://github.com/john-doe"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="GitHub John Doe"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href="https://twitter.com/john_doe"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Twitter John Doe"
+            >
+              <FaTwitter />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/john-doe"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="LinkedIn John Doe"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
           </Col>
  
           <Col xs={12} md={{ span: 2, offset: 1 }} className="mb-4 mb-md-0">

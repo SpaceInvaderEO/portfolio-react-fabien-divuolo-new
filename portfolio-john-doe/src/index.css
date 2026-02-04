@@ -121,6 +121,24 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials a {
+  color: #ffffff;
+  font-size: 1.4rem;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-socials a:hover {
+  color: #cfcfcf;
+  transform: translateY(-2px);
+}
+
 .home-hero {
   height: 85vh;
   background-size: cover;
