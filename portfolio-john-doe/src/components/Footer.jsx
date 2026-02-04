@@ -31,9 +31,27 @@ const Footer = () => {
  
           <Col xs={12} md={{ span: 2, offset: 1 }}>
             <h5>Mes dernières réalisations</h5>
-            <p>Info projet burger</p>
-            <p>Info projet pizza</p>
-            <p>Info projet kebab</p>
+
+            <ul className="footer-links">
+              <li>
+                <Link to="/portfolio">Fresh Food</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Restaurant Akira</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Espace bien-être</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">SEO</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Création d'une API</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Maquette d'un site web</Link>
+              </li>
+            </ul>
           </Col>
         </Row>
       </Container>
