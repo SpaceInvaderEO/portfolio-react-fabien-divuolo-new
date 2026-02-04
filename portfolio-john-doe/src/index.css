@@ -465,6 +465,74 @@ footer a:hover {
   height: 100%;
 }
 
+.legal-page {
+  background: white;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.legal-underline {
+  width: 420px;
+  height: 4px;
+  background-color: #0d6efd;
+  margin: 1rem 0 2rem;
+}
+
+.legal-accordion {
+  width: 75%;
+  border: 1px solid #ddd;
+}
+
+.accordion-header {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.legal-accordion.open .accordion-header,
+.accordion-header:hover {
+  background-color: #e6e6fa;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+}
+
+.legal-accordion.open .accordion-content {
+  max-height: 500px;
+  padding: 1rem;
+}
+
+.arrow {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .legal-accordion {
+    width: 95%;
+  }
+
+  .legal-underline {
+    width: 80%;
+  }
+
+  .accordion-header {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+}
+
 @media (max-width: 768px) {
   .contact-card {
     width: 95%;
