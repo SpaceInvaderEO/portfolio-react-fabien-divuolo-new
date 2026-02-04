@@ -1,7 +1,21 @@
 import heroBg from "../assets/images/hero-bg.jpg";
 import aboutImg from "../assets/images/john-doe-about.jpg";
 
+import { useEffect, useState } from "react";
+import Modal from "../components/Modal";
+
 const Home = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [githubProfile, setGithubProfile] = useState(null);
+
+  useEffect(() => {
+  fetch("https://api.github.com/users/github-johndoe")
+    .then((res) => res.json())
+    .then((data) => setGithubProfile(data))
+    .catch((err) => console.error(err));
+  }, []);
+
   return (
     <> 
       <section
@@ -11,7 +25,12 @@ const Home = () => {
         <div className="hero-overlay">
           <h1>Bonjour, je suis John Doe</h1>
           <h2>Développeur web full stack</h2>
-          <button className="hero-btn">En savoir plus</button>
+          <button
+            className="hero-btn"
+            onClick={() => setIsModalOpen(true)}
+          >
+  En savoir plus
+</button>
         </div>
       </section>
  
@@ -77,6 +96,12 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        profile={githubProfile}
+      />
     </>
   );
 };
