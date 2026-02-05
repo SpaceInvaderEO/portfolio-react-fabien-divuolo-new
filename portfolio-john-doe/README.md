@@ -1,16 +1,70 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PORTFOLIO DE JOHN DOE – REACT.JS
 
-Currently, two official plugins are available:
+DESCRIPTION DU PROJET
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ce projet est un portfolio développé avec React.js dans le cadre d’un devoir appliqué de la formation Développeur Web Web Mobile du Centre Européen de Formation (CEF).
 
-## React Compiler
+Le site présente le profil de John Doe, développeur web junior, à travers plusieurs pages : accueil, services, réalisations, contact et mentions légales.  
+Il respecte une charte graphique imposée, utilise Bootstrap pour la mise en page et intègre du CSS personnalisé pour les effets graphiques. 
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+TECHNOLOGIES UTILISÉES
 
-## Expanding the ESLint configuration
+React.js (avec Vite)  
+React Router Dom  
+Bootstrap  
+CSS  
+React Icons  
+API GitHub (fetch avec useEffect)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+PRÉREQUIS
+
+Node.js 
+npm   
+
+
+INSTALLATION DU PROJET
+
+1/ Cloner le dépôt GitHub
+
+git clone 
+
+2/ Se placer dans le dossier du projet
+
+cd portfolio-john-doe
+
+3/ Installer les dépendances
+
+npm install
+
+3/ Lancer le serveur de développement
+
+npm run dev
+
+5/ Ouvrir le site dans le navigateur à l’adresse indiquée dans le terminal  
+
+http://localhost:5173 sinon 5174, 5175, etc (y'a t-il une limite ?)
+
+FONCTIONNALITÉS PRINCIPALES
+
+Navigation entre les pages avec React Router  
+Header et footer communs à toutes les pages  
+Page d’accueil avec Hero et bouton ouvrant une modale GitHub  
+Récupération des données GitHub une seule fois au chargement  
+Pages services et portfolio avec cartes interactives  
+Formulaire de contact avec champs obligatoires  
+Page mentions légales avec accordéon et balise noindex pour le SEO  
+Effets graphiques au survol (cards, boutons, liens, rs)  
+
+SEO ET BONNES PRATIQUES
+
+Utilisation des balises sémantiques HTML  
+Titres hiérarchisés (h1, h2, etc.)  
+Liens externes avec target="_blank" et rel="nofollow"  
+Page mentions légales non indexée par les moteurs de recherche  
+Validation du code HTML et CSS via les validateurs W3C  
+
+AUTEUR
+
+Projet réalisé par Fabien Di Vuolo, pour le client John Doe  
+Dans le cadre de la formation Développeur Web Web Mobile – Centre Européen de Formation
